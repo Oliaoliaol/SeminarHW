@@ -18,7 +18,7 @@ Console.WriteLine($"Наибольшее число {b}, Наименьшее ч
 */
 
 // Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
-Console.Write("Введите первое число: ");
+/*Console.Write("Введите первое число: ");
 int n1=Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите второ число: ");
 int n2=Convert.ToInt32(Console.ReadLine());
@@ -41,4 +41,14 @@ if (n1>n3)
 }
 else max=n3;
 Console.WriteLine("Наибольшее число " + max);
+*/
+// 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
 
+/*Console.Write("Введите число: ");
+int num=Convert.ToInt32(Console.ReadLine());
+if (num % 2==0)
+{
+   Console.WriteLine("Число четное");
+}
+else Console.WriteLine("Число нечетное");
+*/
