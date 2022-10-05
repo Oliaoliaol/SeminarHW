@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\damir\\Desktop\\домашние задания\\Education\\Seminar\\Homework\\HW1\\HW1.csproj",
+      "projectUniqueName": "C:\\Users\\damir\\Desktop\\Work\\Education\\Seminar\\Homework\\HW1\\HW1.csproj",
       "projectName": "HW1",
-      "projectPath": "C:\\Users\\damir\\Desktop\\домашние задания\\Education\\Seminar\\Homework\\HW1\\HW1.csproj",
+      "projectPath": "C:\\Users\\damir\\Desktop\\Work\\Education\\Seminar\\Homework\\HW1\\HW1.csproj",
       "packagesPath": "C:\\Users\\damir\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\damir\\Desktop\\домашние задания\\Education\\Seminar\\Homework\\HW1\\obj\\",
+      "outputPath": "C:\\Users\\damir\\Desktop\\Work\\Education\\Seminar\\Homework\\HW1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\damir\\AppData\\Roaming\\NuGet\\NuGet.Config"
