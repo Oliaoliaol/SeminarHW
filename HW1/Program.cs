@@ -52,3 +52,21 @@ if (num % 2==0)
 }
 else Console.WriteLine("Число нечетное");
 */
+// Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+
+Console.Write("Введите число: ");
+int N=Convert.ToInt32(Console.ReadLine());
+int i=1;
+int res=0;
+for (i=1; i<=N; i++)
+{
+   res=i%2;
+   if(res==0)
+   {
+      Console.WriteLine(i);
+   }
+}
+
+{
+
+}
