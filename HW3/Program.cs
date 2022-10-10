@@ -40,5 +40,19 @@ double number6=Convert.ToDouble(Console.ReadLine());
 
 Console.Write(Distance(number1,number2,number3, number4, number5, number6));
 */
+//Задача 23 Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 
+void ShowNumbers(int num)
+{
+    int count = 1;
+    while(count<=num)
+    {
+        double n =Math.Pow(count,3);
+        Console.Write(n+" ");
+        count++;
+    }
+}
 
+Console.Write("Введите число: ");
+int number=Convert.ToInt32(Console.ReadLine());
+ShowNumbers(number);
