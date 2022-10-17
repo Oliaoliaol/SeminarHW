@@ -49,12 +49,12 @@ ShowArray(myArray);
 int result =SumOfNegatives(myArray);
 Console.WriteLine("Сумма отрицательных элементов " + result);*/
 //Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
- int RandomPositivArr(int[] arr)
+ int RandomPositivArr(int[] array)
  {
     int count=0;
-    for(int i = 0; i < arr.Length; i++)
+    for(int i = 0; i < array.Length; i++)
     {
-        if (arr[i] % 2==0)
+        if (array[i] % 2==0)
         count++;
     }
     return count;
@@ -63,6 +63,25 @@ Console.WriteLine("Сумма отрицательных элементов " + 
 
 /*int num =Convert.ToInt32(Console.ReadLine());
 int[]arr=CreateRandomArray(num, 100, 999);
-ShowArray(arr);
-Console.WriteLine($"Созданный Вами массив имеет - {RandomPositivArr(arr)} чётных числа");
+ShowArray(array);
+Console.WriteLine($"Созданный Вами массив имеет - {RandomPositivArr(array)} чётных числа");
 */
+//Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
+int SumArrayPosition(int[] array) 
+{
+    int count = 0;
+    for (int i = 0; i < array.Length; i++)
+        if((i + 1) % 2 != 0) 
+            count += array[i];
+    return count;
+}
+
+Console.Write("Введите количество чисел в массиве: ");
+int size = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите минимальное значение элемента в массиве: ");
+int min = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите максимальное значение элемента в массиве: ");
+int max = Convert.ToInt32(Console.ReadLine());
+int[] array  = CreateRandomArray(size, min, max);
+ShowArray(array);
+Console.WriteLine($"Массив размером {size} с значениями внутри от {min} до {max} элементов, сумма элементов нечётных позиций равна {SumArrayPosition(array)}");
