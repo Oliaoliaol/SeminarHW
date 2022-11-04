@@ -15,7 +15,7 @@ int[,] CreateRandom2dArray()
         array[i,j] = new Random().Next(minVal, maxVal + 1);
   return array;
 }
-void Show2dArray(int[,] array)  
+/*void Show2dArray(int[,] array)  
 {
   for (int i = 0; i < array.GetLength(0); i++)
   {
@@ -26,3 +26,13 @@ void Show2dArray(int[,] array)
 }
 int[,] myArray = CreateRandom2dArray();
 Show2dArray(myArray);
+*/
+//Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, и возвращает значение этого элемента или же указание, что такого элемента нет.
+string StockIndex2dArray(int[,] array, int row, int column)
+{
+    return array.GetLength(0) <= row && array.GetLength(1) <= column ? "No this element in this 2d array" : $"Yes this element [{row}, {column}] 2d array stock in and have value - {array[row, column]}";
+}
+
+ int[,] array = CreateRandom2dArray();
+
+Console.WriteLine(StockIndex2dArray(array, 5, 5));
