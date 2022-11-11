@@ -155,7 +155,7 @@ PrintArray(matrixC);
 */
 
 //Задача 60.Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
-int deep1 = InputInt("Введите размерность 1: ");
+/*int deep1 = InputInt("Введите размерность 1: ");
 int deep2 = InputInt("Введите размерность 2: ");
 int deep3 = InputInt("Введите размерность 3: ");
 int countNums = 50;
@@ -211,4 +211,44 @@ int InputInt(string output)
 {
     Console.Write(output);
     return int.Parse(Console.ReadLine());
+}
+*/
+//Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4.
+Console.WriteLine("Введите размер массива");
+int size = Convert.ToInt32(Console.ReadLine());
+
+int[,] nums = new int[size, size];
+
+int num = 1;
+int i = 0;
+int j = 0;
+
+while (num <= size * size)
+{
+    nums[i, j] = num;
+    if (i <= j + 1 && i + j < size - 1)
+        ++j;
+    else if (i < j && i + j >= size - 1)
+        ++i;
+    else if (i >= j && i + j > size - 1)
+        --j;
+    else
+        --i;
+    ++num;
+}
+
+PrintArray(nums);
+
+void PrintArray(int[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        Console.Write("[ ");
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            Console.Write(array[i, j] + " ");
+        }
+        Console.Write("]");
+        Console.WriteLine("");
+    }
 }
